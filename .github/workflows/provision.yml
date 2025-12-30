@@ -1,0 +1,16 @@
+name: EC2 Provision
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Git Checkout
+        uses: actions/checkout@v4
+      - name: Terraform CLI install
+        uses: hashicorp/setup-terraform@v3
