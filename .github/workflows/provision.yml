@@ -36,6 +36,7 @@ jobs:
 
   terraformdestroy:
     runs-on: ubuntu-latest
+    needs: terraform
 
     steps:
       - name: Destroy resource
