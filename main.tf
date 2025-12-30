@@ -5,5 +5,5 @@ resource "aws_instance" "ec2-instance" {
   vpc_security_group_ids = [ "sg-0255e9a92d037cd32" ]
 }
 provider "aws" {
-  region: "us-east-1"
+  region = "us-east-1"
 }
