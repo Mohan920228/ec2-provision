@@ -33,11 +33,3 @@ jobs:
 
       - name: Terraform Apply
         run: terraform apply -auto-approve -input=false
-
-  terraformdestroy:
-    runs-on: ubuntu-latest
-    needs: terraform
-
-    steps:
-      - name: Destroy resource
-        run: terraform destroy -auto-approve -input=false
