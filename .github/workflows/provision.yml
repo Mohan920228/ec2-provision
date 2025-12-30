@@ -3,7 +3,7 @@ name: EC2 Provision
 on:
   push:
     branches:
-      - main
+      - master
 
 permissions:
   contents: read
