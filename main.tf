@@ -3,6 +3,9 @@ resource "aws_instance" "ec2-instance" {
   instance_type = "t3a.nano"
   subnet_id = "subnet-0a54e06d228e37fc2"
   vpc_security_group_ids = [ "sg-0255e9a92d037cd32" ]
+  tags = {
+    "Name" = "Demo-ec2"
+  }
 }
 terraform {
   required_providers {
