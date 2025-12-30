@@ -18,3 +18,6 @@ provider "aws" {
   region = "us-east-1"
 }
 
+output "ec2-ip" {
+  value = aws_instance.ec2-instance
+}
