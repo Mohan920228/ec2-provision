@@ -22,5 +22,5 @@ provider "aws" {
 }
 
 output "ec2-ip" {
-  value = aws_instance.ec2-instance
+  value = aws_instance.ec2-instance.id
 }
